@@ -14,6 +14,12 @@
 		D71DB0FF1E914DB500DC8E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71DB0FD1E914DB500DC8E73 /* LaunchScreen.storyboard */; };
 		D71DB10A1E914DC300DC8E73 /* evo_agentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71DB1091E914DC300DC8E73 /* evo_agentTests.swift */; };
 		D71DB1151E914DC300DC8E73 /* evo_agentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71DB1141E914DC300DC8E73 /* evo_agentUITests.swift */; };
+		D71DB1251E919B0300DC8E73 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1231E919B0300DC8E73 /* Fabric.framework */; };
+		D71DB1261E919B0300DC8E73 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1231E919B0300DC8E73 /* Fabric.framework */; };
+		D71DB1271E919B0300DC8E73 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1231E919B0300DC8E73 /* Fabric.framework */; };
+		D71DB1281E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
+		D71DB1291E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
+		D71DB12A1E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,8 @@
 		D71DB1101E914DC300DC8E73 /* evo_agentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evo_agentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71DB1141E914DC300DC8E73 /* evo_agentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evo_agentUITests.swift; sourceTree = "<group>"; };
 		D71DB1161E914DC400DC8E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D71DB1231E919B0300DC8E73 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		D71DB1241E919B0300DC8E73 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71DB1281E919B0300DC8E73 /* Crashlytics.framework in Frameworks */,
+				D71DB1251E919B0300DC8E73 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71DB1291E919B0300DC8E73 /* Crashlytics.framework in Frameworks */,
+				D71DB1261E919B0300DC8E73 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71DB12A1E919B0300DC8E73 /* Crashlytics.framework in Frameworks */,
+				D71DB1271E919B0300DC8E73 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,8 @@
 		D71DB0E81E914DAE00DC8E73 = {
 			isa = PBXGroup;
 			children = (
+				D71DB1231E919B0300DC8E73 /* Fabric.framework */,
+				D71DB1241E919B0300DC8E73 /* Crashlytics.framework */,
 				D71DB0F31E914DAF00DC8E73 /* evo_agent */,
 				D71DB1081E914DC300DC8E73 /* evo_agentTests */,
 				D71DB1131E914DC300DC8E73 /* evo_agentUITests */,
@@ -135,6 +151,7 @@
 				D71DB0ED1E914DAF00DC8E73 /* Sources */,
 				D71DB0EE1E914DAF00DC8E73 /* Frameworks */,
 				D71DB0EF1E914DAF00DC8E73 /* Resources */,
+				D71DB1221E91947700DC8E73 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +273,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D71DB1221E91947700DC8E73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f31847097917a5a21392318c4e3f0b921a54b8c0 55621929dfa8f64be064aa0f0eaabe8f58b63dbc960c9658dada246e2180e264";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D71DB0ED1E914DAF00DC8E73 /* Sources */ = {
@@ -418,7 +451,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,7 +469,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +488,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agentTests";
@@ -460,6 +507,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agentTests";
@@ -474,6 +525,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agentUITests";
@@ -488,6 +543,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WVBPB459F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = evo_agentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agentUITests";
@@ -516,6 +575,7 @@
 				D71DB11B1E914DC400DC8E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D71DB11C1E914DC400DC8E73 /* Build configuration list for PBXNativeTarget "evo_agentTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +584,7 @@
 				D71DB11E1E914DC400DC8E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D71DB11F1E914DC400DC8E73 /* Build configuration list for PBXNativeTarget "evo_agentUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +593,7 @@
 				D71DB1211E914DC400DC8E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

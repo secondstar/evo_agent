@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='evo_agentUITests.xctest' tests='3' failures='0'>
+  <testsuite name='evo_agentTests.evo_agentTests' tests='2' failures='0'>
+    <testcase classname='evo_agentTests.evo_agentTests' name='testExample' time='0.086'/>
+    <testcase classname='evo_agentTests.evo_agentTests' name='testPerformanceExample' time='1.728'/>
+  </testsuite>
+  <testsuite name='evo_agentUITests.evo_agentUITests' tests='1' failures='0'>
+    <testcase classname='evo_agentUITests.evo_agentUITests' name='testExample' time='20.862'/>
+  </testsuite>
+</testsuites>
