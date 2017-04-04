@@ -20,6 +20,7 @@
 		D71DB1281E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
 		D71DB1291E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
 		D71DB12A1E919B0300DC8E73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DB1241E919B0300DC8E73 /* Crashlytics.framework */; };
+		D7EE9F2A1E935C4C00B845E9 /* 5689572157_dfc172ace6_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7EE9F291E935C4C00B845E9 /* 5689572157_dfc172ace6_o.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D71DB1161E914DC400DC8E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D71DB1231E919B0300DC8E73 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		D71DB1241E919B0300DC8E73 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		D7EE9F291E935C4C00B845E9 /* 5689572157_dfc172ace6_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5689572157_dfc172ace6_o.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		D71DB0E81E914DAE00DC8E73 = {
 			isa = PBXGroup;
 			children = (
+				D7EE9F291E935C4C00B845E9 /* 5689572157_dfc172ace6_o.jpg */,
 				D71DB1231E919B0300DC8E73 /* Fabric.framework */,
 				D71DB1241E919B0300DC8E73 /* Crashlytics.framework */,
 				D71DB0F31E914DAF00DC8E73 /* evo_agent */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7EE9F2A1E935C4C00B845E9 /* 5689572157_dfc172ace6_o.jpg in Resources */,
 				D71DB0FF1E914DB500DC8E73 /* LaunchScreen.storyboard in Resources */,
 				D71DB0FC1E914DB400DC8E73 /* Assets.xcassets in Resources */,
 				D71DB0FA1E914DB200DC8E73 /* Main.storyboard in Resources */,
@@ -450,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = WVBPB459F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = WVBPB459F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
