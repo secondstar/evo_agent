@@ -11,10 +11,15 @@ import WebKit
 import Crashlytics
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKUIDelegate {
 
-
+    var webView: WKWebView!
+    
     override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
     }
 
     override func viewDidLoad() {
@@ -26,9 +31,9 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
         view.addSubview(button)
 
-        // let myURL = URL(string: "https://realestateflywheel-production.herokuapp.com")
-        // let myRequest = URLRequest(url: myURL!)
-        // webView.load(myRequest)
+         let myURL = URL(string: "https://realestateflywheel-production.herokuapp.com")
+         let myRequest = URLRequest(url: myURL!)
+         webView.load(myRequest)
 		
     }
 
