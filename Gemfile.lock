@@ -60,6 +60,9 @@ GEM
       xcodeproj (>= 0.20, < 2.0.0)
       xcpretty (>= 0.2.4, < 1.0.0)
       xcpretty-travis-formatter (>= 0.0.3)
+    fastlane-plugin-appicon (0.5.2)
+      json
+      mini_magick (~> 4.5.1)
     gh_inspector (1.0.3)
     google-api-client (0.9.28)
       addressable (~> 2.3)
@@ -153,6 +156,7 @@ DEPENDENCIES
   dotenv!
   faraday (~> 0.12.0)!
   fastlane (~> 2.25)!
+  fastlane-plugin-appicon
   pry!
   rb-readline (~> 0.5.4)!
 

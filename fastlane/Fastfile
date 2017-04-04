@@ -52,6 +52,11 @@ platform :ios do
   end  
   ### finish fabric beta
 
+  desc "Generates app icons"
+  lane :icon do
+    appicon(appicon_image_file: 'spec/fixtures/Appicon.png',
+      appicon_devices: [:ipad, :iphone])
+  end
   desc "Runs all the tests"
   lane :test do
     scan
