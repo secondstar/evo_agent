@@ -21,12 +21,30 @@ platform :ios do
     
   end
 
+  desc "Setup workspace"  
+  lane :setup do  
+    ## Setup pre-commit hook
+    # sh "ln -s scripts/pre-commit.sh .git/hooks/pre-commit" # These files don't exist --yet
+    ## Setup badge to add a beta watermark to your iOS app icon
+    sh "gem install badge"
+    ## Install CocoaPods
+    # Remove old versions
+    sh "gem uninstall cocoapods -aIx"
+    # v1
+    sh "gem install cocoapods -v '1.2' --no-rdoc --no-ri --no-document --quiet"
+    ## Install Carthage
+    sh "brew install carthage || true"
+    ## Verify project dependencies
+    carthage update
+    cocoapods
+  end  
 
   ### start fabric beta
   #
   # Learn more here: https://github.com/fastlane/setups/blob/master/samples-ios/distribute-beta-build.md 🚀
   #
   lane :beta do |values|
+    increment_build_number
     # Fabric generated this lane for deployment to Crashlytics Beta
     # set 'export_method' to 'ad-hoc' if your Crashlytics Beta distribution uses ad-hoc provisioning
     gym(scheme: 'evo_agent', export_method: 'ad-hoc')
@@ -81,6 +99,11 @@ platform :ios do
     gym(scheme: "evo_agent") # Build your app - more options available
     deliver(force: true)
     # frameit
+  end
+
+  desc "register_new_beta_devices"
+  lane :register_new_beta_devices do
+    match(app_identifier: "com.dicemediagroup.evo-agent.Adhoc", type: "adhoc", verbose:true, force_for_new_devices: true)
   end
 
   # You can define as many lanes as you want

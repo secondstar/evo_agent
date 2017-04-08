@@ -29,6 +29,11 @@ xcode-select --install
 </table>
 # Available Actions
 ## iOS
+### ios setup
+```
+fastlane ios setup
+```
+Setup workspace
 ### ios beta
 ```
 fastlane ios beta
@@ -56,6 +61,11 @@ This will also make sure the profile is up to date
 fastlane ios release
 ```
 Deploy a new version to the App Store
+### ios register_new_beta_devices
+```
+fastlane ios register_new_beta_devices
+```
+register_new_beta_devices
 
 ----
 

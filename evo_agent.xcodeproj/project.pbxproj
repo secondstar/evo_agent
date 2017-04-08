@@ -455,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = WVBPB459F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -474,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = WVBPB459F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dicemediagroup.evo-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
